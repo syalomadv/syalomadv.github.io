@@ -2,63 +2,101 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Praktikum Pabwe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tantangan PABWE</title>
+    <!-- <style>
+      h1 {
+        color: #1098ad;
+      }
+
+      nav a {
+        color: #1098ad;
+        margin-right: 10px;
+      }
+      .text {
+        color: #1098ad;
+      }
+      .tombol {
+        background-color: #1098ad;
+      }
+      
+    </style> -->
+    <link rel="stylesheet" href="custom.css" />
   </head>
-  <body>
-    <header>
-      <h1>Login</h1>
+  <body class="login-body">
+    <div class="sub-login">
+      <div>
+        <header>
+          <h1>🔑Login</h1>
 
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="blog.html">Blog</a>
-        <a href="challenges.html">Challenges</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="login.html">Login</a>
-      </nav>
-    </header>
-    <main>
-      <hr />
-      <table width="100%">
-        <tr>
-          <td valign="top">
-            <fieldset>
-              <legend><b>Login</b></legend>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="challenges.html">Challenges</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Login</a>
+          </nav>
+        </header>
 
-              <label for="email">Email</label><br />
-              <input type="email" id="email" name="email" /><br />
-
-              <label for="password">Password</label><br />
-              <input type="password" id="password" name="password" /><br />
-              <input type="submit" value="Submit" /><br />
-            </fieldset>
-          </td>
-          <td>
-            <fieldset>
-              <legend><b>Register</b></legend>
-
-              <label for="name">Nama Lengkap</label><br />
-              <input type="text" id="name" name="name" /><br />
-
-              <label for="email">Email</label><br />
-              <input type="email" id="email" name="email" /><br />
-
-              <label for="pekerjaan">Pekerjaan</label><br />
-              <select>
-                <option value="mahasiswa">Mahasiswa</option>
-                <option value="asisten dosen">Asisten Dosen</option>
-                <option value="dosen">Dosen</option>
-              </select>
-
+        <div class="tempat-login-register">
+          <div class="tempat-login">
+            <h3 class="text">Login</h3>
+            <tr>
+              <td><label for="email">Email</label></td>
               <br />
-              <label for="password">Password</label><br />
-              <input type="password" id="password" name="password" /><br />
+              <td><input type="email" id="email" name="email" /></td>
+            </tr>
+            <br />
+            <br />
+            <tr>
+              <td><label for="password">Password</label></td>
               <br />
+              <td><input type="password" id="pass" name="pass" /></td>
+            </tr>
+            <br />
 
-              <input type="submit" />
-            </fieldset>
-          </td>
-        </tr>
-      </table>
-    </main>
+            <br />
+            <div class="tempat-tombol">
+              <button class="tombol">Kirim</button>
+            </div>
+          </div>
+
+          <div class="tempat-register">
+            <h3 class="text">Register</h3>
+            <label for="text">Nama Lengkap</label>
+            <br />
+            <input type="text" id="name" name="name" />
+            <br />
+
+            <br />
+            <label for="email">Email</label>
+            <br />
+            <input type="email" id="email" name="email" />
+            <br />
+            <br />
+
+            <label>Pekerjaan</label>
+            <br />
+            <select class="pekerjaan">
+              <option>Mahasiswa</option>
+              <option>Asisten Dosen</option>
+              <option>Dosen</option>
+            </select>
+            <br />
+            <br />
+
+            <label for="password">Password</label>
+            <br />
+            <input type="password" id="pass" name="pass" />
+
+            <br />
+            <br />
+            <div class="tempat-tombol">
+              <button class="tombol">Kirim</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -3,27 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <title>Praktikum PABWE</title>
+    <link rel="stylesheet" href="custom.css" />
   </head>
-  <body>
-    <header>
-      <h1>Contact Us</h1>
+  <body class="sub-contact">
+    <header class="tempat-warna">
+      <h1>☎Contact Us</h1>
 
       <nav>
         <a href="index.html">Home</a>
         <a href="blog.html">Blog</a>
         <a href="challenges.html">Challenges</a>
         <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login</a>
       </nav>
     </header>
 
     <hr />
 
-    <main>
+    <main class="lebar">
       <form>
-        <table cellpadding="5">
+        <table cellpadding="5" class="tabel-contact">
           <caption>
-            <h2>Hubungi Kami</h2>
-            <hr />
+            <h2 class="judul-kontak">Hubungi Kami</h2>
           </caption>
           <tr>
             <td><label for="name">Nama Lengkap</label></td>
@@ -35,7 +36,7 @@
           </tr>
           <tr>
             <td><label for="kategori">Kategori</label></td>
-            <td>
+            <td class="kategoriku">
               <input type="radio" id="report" name="kategori" value="report" />
               <label for="report">Laporan</label><br />
               <input
@@ -67,11 +68,11 @@
           </tr>
           <tr align="center">
             <td colspan="2">
-              <input type="submit" value="Kirim" />
+              <input id="warna-kirim" type="submit" value="Kirim" />
             </td>
           </tr>
           <tr>
-            <td colspan="2"><hr /></td>
+            <td colspan="2"></td>
           </tr>
         </table>
       </form>
