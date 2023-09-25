@@ -1,136 +1,302 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Praktikum PABWE</title>
-    <link rel="stylesheet" href="custom.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+    <style>
+      .nav-link.active {
+        color: #0d6efd !important;
+      }
+    </style>
   </head>
-  <body class="index-body">
-    <!-- Membuat artikel sederhana dengan HTML -->
-    <div class="sub-index">
-      <header>
-        <h1>&#128216; Majalah Kode</h1>
+  <body data-bs-spy="scroll" data-bs-target="#nav-scroll">
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light fixed-top"
+      id="nav-scroll"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand">Portfolio</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto fw-bold">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">Organizational</a>
+            </li>
+            <li class="nav-item">
+              <a href="#blog" class="nav-link">Project</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="blog.html">Blog</a>
-          <a href="challenges.html">Challenges</a>
-          <a href="contact.html">Contact Us</a>
-          <a href="login.html">Login</a>
-        </nav>
-      </header>
+    <section
+      id="home"
+      class="d-flex min-vh-100 flex-column justify-content-center align-items-center"
+      style="background-image: url('/assets/img/bg.jpg')"
+    >
+      <h1 class="fw-bolder display-1 mb-3">Syalom Advensia Manurung</h1>
+      <h6 class="fs-3 text-secondary text-capitalize mb-4">
+        I'm a UI/UX Designer and Web Developer Enthusiast
+      </h6>
+      <a href="#" class="btn btn-secondary rounded-pill">About Me</a>
+    </section>
 
-      <article>
-        <header>
-          <h2 class="judul-index">Bahasa Dasar Web: HTML</h2>
-
-          <img
-            src="/assets/img/abdullah.jpeg"
-            alt="Photo profile"
-            width="50"
-            height="50"
-          />
-
-          <p>
-            Ditulis oleh
-            <strong>Abdullah Ubaid</strong>
-            pada hari Senin, 23 April 2023
+    <section id="about" class="container py-5">
+      <div class="text-center py-5">
+        <h2 class="fw-bolder text-uppercase">about</h2>
+        <p>
+          I am a student studying at Del Institute of Technology. Web design and
+          development is my passion.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <img src="/assets/img/syalom.jpeg" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-7 offset-lg-1">
+          <p class="lh-lg">
+            I am an individual who enjoys acquiring knowledge. I have a fondness
+            for gaining fresh insights, and I also desire to impart my knowledge
+            to my surroundings. I am dependable and possess effective
+            communication skills as well as strong leadership qualities. I
+            thrive on challenges and consistently seek out opportunities. I am
+            adept at collaborating within a team and am open to mastering novel
+            tools and technology.
           </p>
+          <p class="fw-bold fs-4">My Skills:</p>
+          <div class="mb-2">
+            <p class="m-0">HTML:</p>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped bg-success"
+                style="width: 90%"
+              >
+                90%
+              </div>
+            </div>
+          </div>
+          <div class="mb-2">
+            <p class="m-0">CSS:</p>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped bg-info"
+                style="width: 80%"
+              >
+                80%
+              </div>
+            </div>
+          </div>
+          <div class="mb-2">
+            <p class="m-0">Javascript:</p>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped bg-warning"
+                style="width: 800%"
+              >
+                80%
+              </div>
+            </div>
+          </div>
+          <div class="mb-2">
+            <p class="m-0">Bootstrap 5:</p>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped bg-danger"
+                style="width: 80%"
+              >
+                80%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <img
-            src="/assets/img/post-img.jpg"
-            alt="HTML code on a screen"
-            width="500"
-            height="200"
-          />
-        </header>
+    <section id="portfolio" class="bg-dark py-5">
+      <div class="container">
+        <div class="text-center py-5 text-white">
+          <h2 class="fw-bolder text-uppercase">Organizational Experience</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img
+              src="/assets/img/ek1 (1).jpeg"
+              alt=""
+              class="img-fluid img-thumbnail"
+            />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img
+              src="/assets/img/ek1 (2).jpeg"
+              alt=""
+              class="img-fluid img-thumbnail"
+            />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img
+              src="/assets/img/ek1 (3).jpeg"
+              alt=""
+              class="img-fluid img-thumbnail"
+            />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img
+              src="/assets/img/ek1 (4).jpeg"
+              alt=""
+              class="img-fluid img-thumbnail"
+            />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img
+              src="/assets/img/ek1 (5).jpeg"
+              alt=""
+              class="img-fluid img-thumbnail"
+            />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img
+              src="/assets/img/ek1 (6).jpeg"
+              alt=""
+              class="img-fluid img-thumbnail"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <p>
-          Semua situs web dan aplikasi web modern dibangun dengan tiga teknologi
-          <em>dasar</em>: HTML, CSS, dan JavaScript. Inilah bahasa-bahasa dari
-          web.
+    <section id="blog" class="container py-5">
+      <div class="text-center py-5">
+        <h2 class="fw-bolder text-uppercase">My Project</h2>
+        <p></p>
+      </div>
+      <div class="row pb-5">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="/assets/img/pbo.jpeg" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title text-center py-2">
+                Object-Oriented Programming (2022)
+              </h5>
+              <p class="card-text">
+                The development of the Login In and Out application was made for
+                students of the Informatics study program class of 2021 so that
+                lecturers can more easily check the log in and out of each
+                student of the Informatics study program class of 2021. The
+                feature that we will create is in the form of logging in and out
+                where each student must enter their ID / NIM so that their logs
+                can be recorded in the system.
+              </p>
+              <a href="#" class="btn btn-light">Read more...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="/assets/img/basdat.jpeg" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title text-center py-2">Database (2022)</h5>
+              <p class="card-text">
+                Create an ERD, Conceptual Data Model (CDM), Physical Data Model
+                (PDM), Tables, Normalization, and Create Database and Table
+              </p>
+              <a href="#" class="btn btn-light">Read more...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="/assets/img/imk.jpeg" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title text-center py-2">
+                Human-Computer Interaction
+              </h5>
+              <p class="card-text">
+                In the results of the re-design that I did on the Del IT
+                website, I changed some components on the website. First, I
+                reduced the menu displayed on the main page of the IT Del
+                website. I think the menu is placed at the top The website must
+                be general and important menus so that there are not too many
+                displayed on the website.
+              </p>
+              <a href="#" class="btn btn-light">Read more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-dark py-5">
+      <div class="container">
+        <div class="text-center py-5 text-white">
+          <h2 class="fw-bolder text-uppercase">Contact Me</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div
+          class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto"
+        >
+          <form action="" class="text-white">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label"> Your Email</label>
+              <input type="email" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label"> Your Subject</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label"> Your Message</label>
+              <textarea
+                name="message"
+                cols="30"
+                rows="10"
+                class="form-control"
+              ></textarea>
+            </div>
+            <div class="text-end">
+              <button type="submit" class="btn btn-primary btn-lg">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-light">
+      <div class="container text-center">
+        <p class="mb-0 py-3 fs-5">
+          All rights reserved by <strong>Pabwe</strong> &copy; 2023
         </p>
-        <p>
-          Dalam posting ini, mari fokus pada HTML. Kita akan belajar tentang
-          HTML secara keseluruhan, dan mengapa Anda juga seharusnya
-          mempelajarinya.
-        </p>
+      </div>
+    </footer>
 
-        <h3>Apa itu HTML?</h3>
-        <p>
-          HTML merupakan singkatan dari
-          <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup
-          <strong>L</strong>anguage. Ini adalah bahasa markup yang digunakan
-          oleh pengembang web untuk mengatur dan menggambarkan isi dari sebuah
-          halaman web (bukan bahasa pemrograman).
-        </p>
-        <p>
-          HTML terdiri dari elemen-elemen yang menjelaskan berbagai jenis
-          konten: paragraf, tautan, judul, gambar, video, dan lain sebagainya.
-          Peramban web memahami HTML dan merender kode HTML sebagai situs web.
-        </p>
-        <p>Dalam HTML, setiap elemen terdiri dari 3 bagian:</p>
-        <ol>
-          <li>Tag pembuka</li>
-          <li>Tag penutup</li>
-          <li>Elemen sebenarnya</li>
-        </ol>
-
-        <p>
-          Anda dapat mempelajari lebih lanjut di
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-            target="_blank"
-          >
-            MDN Web Docs
-          </a>
-          .
-        </p>
-
-        <h3>Mengapa Anda harus mempelajari HTML?</h3>
-        <p>
-          Ada banyak alasan untuk mempelajari bahasa dasar web ini. Berikut
-          adalah 5 di antaranya:
-        </p>
-        <ul>
-          <li>Untuk dapat menggunakan bahasa pengembangan web dasar</li>
-          <li>
-            Untuk membuat situs web yang indah secara manual tanpa mengandalkan
-            alat seperti Wordpress atau Wix
-          </li>
-          <li>Untuk membangun aplikasi web</li>
-          <li>Untuk menimbulkan kesan pada teman-teman</li>
-          <li>Untuk bersenang-senang ?</li>
-        </ul>
-        <p>
-          Semoga Anda memperoleh pengetahuan baru dari artikel ini. Sampai jumpa
-          di kesempatan berikutnya!
-        </p>
-      </article>
-
-      <aside>
-        <h4>Related Post</h4>
-
-        <ul>
-          <img src="/assets/img/related-1.jpg" width="50" height="50" />
-          <a href="#" target="_blank"> How to Learn Web Development </a>
-          <li>oleh Abdullah Ubaid</li>
-        </ul>
-
-        <ul>
-          <img src="/assets/img/related-2.jpg" width="50" height="50" />
-          <a href="#" target="_blank"> The Unknown Power of CSS</a>
-          <li>oleh Kevin Sihaloho</li>
-        </ul>
-
-        <ul>
-          <img src="/assets/img/related-3.jpg" width="50" height="50" />
-          <a href="#" target="_blank"> Why Java is Awesome</a>
-          <li>oleh Aprialdy Sembiring</li>
-        </ul>
-
-        <footer>Copyright &copy; 2024 oleh Praktikum PABWE.</footer>
-      </aside>
-    </div>
+    <script src="/assets/vendor/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
